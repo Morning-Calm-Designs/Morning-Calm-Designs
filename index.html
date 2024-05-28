@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morning Calm Designs</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -20,6 +21,18 @@
             padding: 20px 0;
             font-family: 'Pacifico', cursive;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         footer {
             background-color: #ff6f61;
@@ -43,6 +56,7 @@
         }
         .section {
             margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
         }
         .section h2 {
             font-family: 'Pacifico', cursive;
@@ -121,12 +135,28 @@
         .store-links a:hover {
             background-color: #e65b55;
         }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Morning Calm Designs</h1>
+    <nav>
+        <a href="#stores">Stores</a>
+        <a href="#about-us">About Us</a>
+        <a href="#design-collections">Collections</a>
+        <a href="#shop">Shop</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
 </header>
 
 <section class="banner">
@@ -168,7 +198,7 @@
 
     <section class="section" id="contact">
         <h2>Contact</h2>
-        <p>You can reach us at: <a href="mailto:tuftimoon@gmail.com">tuftimoon@gmail.com</a></p>
+        <p>You can reach us at: <a href="mailto:tuftimoon@gmail.com"><i class="fas fa-envelope"></i> tuftimoon@gmail.com</a></p>
         <div class="placeholder">Social Media Links Coming Soon</div>
     </section>
 
