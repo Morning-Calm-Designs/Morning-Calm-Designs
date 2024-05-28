@@ -16,14 +16,13 @@
             padding: 10px 0;
         }
         .banner {
-            background-image: url('coverphoto.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 600px; /* Set this to match the image height */
             text-align: center;
             color: white;
             position: relative;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
         }
         .content {
             padding: 20px;
@@ -78,7 +77,7 @@
 </header>
 
 <section class="banner">
-    <!-- Removed the text overlay -->
+    <img src="coverphoto.png" alt="Cover Photo">
 </section>
 
 <div class="content">
